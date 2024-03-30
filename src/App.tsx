@@ -6,7 +6,12 @@ import { SignupForm } from "./components/SignupForm";
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="App" 
+        style={{
+          margin: "auto",
+          width: "50%",
+          padding: "10px",
+        }}>
         <SignupForm />
       </div>
     </Provider>
