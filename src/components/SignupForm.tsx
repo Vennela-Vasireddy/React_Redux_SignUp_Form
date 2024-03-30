@@ -34,7 +34,7 @@ export const SignupForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>User Type</label>
+      <label style={{ padding: "10px" }}>User Type</label>
       <select
         name="user_type"
         value={formData.user_type}
@@ -46,8 +46,8 @@ export const SignupForm: React.FC = () => {
         <option value="institution_staff">Institution Staff</option>
         <option value="service_provider">Service Provider</option>
       </select>
-
-      <label>First Name</label>
+<br /> <br />
+      <label style={{ padding: "10px" }}>First Name</label>
       <input
         type="text"
         name="first_name"
@@ -55,8 +55,8 @@ export const SignupForm: React.FC = () => {
         onChange={handleChange}
         placeholder="Enter your first name"
       />
-
-      <label>Last Name</label>
+<br /> <br />
+      <label style={{ padding: "10px" }} >Last Name</label>
       <input
         type="text"
         name="last_name"
@@ -64,8 +64,8 @@ export const SignupForm: React.FC = () => {
         onChange={handleChange}
         placeholder="Enter your last name"
       />
-
-      <label>Username</label>
+<br /> <br />
+      <label style={{ padding: "10px" }}>Username</label>
       <input
         type="text"
         name="username"
@@ -73,8 +73,8 @@ export const SignupForm: React.FC = () => {
         onChange={handleChange}
         placeholder="Choose a username"
       />
-
-      <label>Email</label>
+<br /> <br />
+      <label style={{ padding: "10px" }}>Email</label>
       <input
         type="email"
         name="email"
@@ -82,8 +82,8 @@ export const SignupForm: React.FC = () => {
         onChange={handleChange}
         placeholder="Enter your email"
       />
-
-      <label>Password</label>
+<br /> <br />
+      <label style={{ padding: "10px" }}>Password</label>
       <input
         type="password"
         name="password"
@@ -91,7 +91,7 @@ export const SignupForm: React.FC = () => {
         onChange={handleChange}
         placeholder="Create a password"
       />
-
+<br /> <br />
       {error && <p className="error">Error: {error}</p>}
       <button type="submit" disabled={loading}>
         {loading ? "Signing Up..." : "Sign Up"}
